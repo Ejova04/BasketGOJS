@@ -1,0 +1,62 @@
+{{/*{{ define "content" }}*/}}
+
+{{/*<div class="container white black-text artist-page">*/}}
+    {{/* <a href="/" class="back-home green-text">&#10229; Back to home</a>*/}}
+
+    {{/* <h1>Search for "{{ .Keyword }}"</h1>*/}}
+
+    {{/* <div class="row">*/}}
+        {{/* <form action="/search" method="POST">*/}}
+            {{/* <div class="input-field col s12">*/}}
+                {{/*
+                <input* /}} {{/* type="text" */}} {{/* class="validate" */}} {{/* list="datalist" */}} {{/* name="input"
+                    */}} {{/* autocomplete="off" */}} {{/* required*/}} {{/* />*/}}
+                {{/* <label for="last_name">Search for anything</label>*/}}
+                {{/*
+            </div>*/}}
+            {{/* </form>*/}}
+        {{/* </div>*/}}
+
+    {{/* <ul class="collection">*/}}
+        {{/* {{ range .FirstName}}*/}}
+        {{/* <li class="collection-item">*/}}
+            {{/* {{ .FirstName }}*/}}
+            {{/* <a href="/{{ .Slug }}" class="secondary-content">Player</a>*/}}
+            {{/* </li>*/}}
+        {{/* {{ end }} {{ range $team, $player := .Team}}*/}}
+        {{/* <li class="collection-item">*/}}
+            {{/* {{ $member }}*/}}
+            {{/* <a href="/{{ .Slug }}" class="secondary-content" */}} {{/*>Member of {{ $player.Team }}</a* /}} {{/*>
+                */}}
+                {{/* </li>*/}}
+        {{/* {{ end }} {{ range $weight, $player := .Weight}}*/}}
+        {{/* <li class="collection-item">*/}}
+            {{/* {{ $fa }}*/}}
+            {{/* <a href="/{{ .Slug }}" class="secondary-content" */}} {{/*>First album of {{ $artist.Name }}</a* /}}
+                    {{/*>*/}}
+                {{/* </li>*/}}
+        {{/* {{ end }} {{ range $position, $player := .Position}}*/}}
+        {{/* <li class="collection-item">*/}}
+            {{/* {{ $cd }}*/}}
+            {{/* <a href="/{{ .Slug }}" class="secondary-content" */}} {{/*>Creation date of {{ $artist.Name }}</a* /}}
+                    {{/*>*/}}
+                {{/* </li>*/}}
+        {{/* {{ end }}*/}}
+        {{/* </ul>*/}}
+
+    {{/* */}}
+
+    {{/* <ul class="collection with-header">*/}}
+        {{/* <li class="collection-header">
+        </li>*/}}
+
+        {{/* <li class="collection-item">*/}}
+
+            {{/* <a href="/{{ $player.Slug }}" class="secondary-content" */}} {{/*>{{ $player.FirstName }}</a* /}} {{/*>
+                */}}
+                {{/* </li>*/}}
+        {{/* {{ end }} {{ end }}*/}}
+        {{/* </ul>*/}}
+    {{/*</div>*/}}
+
+{{/*{{ end }}*/}}

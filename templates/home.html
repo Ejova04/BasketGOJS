@@ -1,0 +1,62 @@
+{{ define "content" }}
+
+<div class="container">
+    <h1>Ynov-BallDontLie</h1>
+
+    <div class="row">
+        <form>
+            <div class="input-field col s12">
+                <input type="text" class="validate grey-text" list="datalist" name="input" required />
+                <label for="last_name">Searchbar</label>
+            </div>
+        </form>
+    </div>
+
+    {{/* <datalist id="datalist">*/}}
+        {{/* {{ range . }}*/}}
+
+        {{/* <option value="{{ .FirstName }}">{{ .FirstName }} // Players</option>*/}}
+        {{/* <option value="{{ .LastName }}">{{ .LastName }} // Players</option>*/}}
+        {{ end }}*/}}
+        {{/*
+    </datalist>*/}}
+
+    {{/* <div class="list">*/}}
+        {{/* {{ range . }}*/}}
+        {{/* <div class="card z-3">*/}}
+            {{/* <div class="card-image">*/}}
+                {{/* <a href="/{{ .Id }}">*/}}
+                    {{/* </a>*/}}
+                {{/* <a* /}} {{/* class="btn-floating btn-large halfway-fab waves-effect waves-light red" */}} {{/*
+                    href="/player/{{ .Id }}" */}} {{/*><i class="material-icons">arrow_forward</i></a* /}} {{/*>*/}}
+                {{/* </div>*/}}
+
+            {{/* <div class="card-content">*/}}
+                {{/* <p class="card-title">{{ .LastName }}</p>*/}}
+                {{/* </div>*/}}
+            {{/* </div>*/}}
+        {{/* {{ end }}*/}}
+        {{/* </div>*/}}
+    {{/*
+</div>*/}}
+<div class="col s12 l8">
+    <div class="row">
+        {{ range . }}
+        <div class="col s12 m6 l4">
+            <div class="card z-3">
+                <div class="card-image">
+                    <a href="/player/{{ .Id }}">
+                    </a>
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"
+                        href="/artist/{{ .Id }}"><i class="material-icons">arrow_forward</i></a>
+                </div>
+
+                <div class="card-content">
+                    <p class="card-title">{{ .FirstName }}</p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+</div>
